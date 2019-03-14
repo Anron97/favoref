@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Resource} from '../../models/Resource';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-resource-widget',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourceWidgetComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  resource: Resource;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
