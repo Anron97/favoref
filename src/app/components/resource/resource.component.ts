@@ -3,11 +3,11 @@ import {Resource} from '../../models/Resource';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-resource-widget',
-  templateUrl: './resource-widget.component.html',
-  styleUrls: ['./resource-widget.component.scss']
+  selector: 'app-resource',
+  templateUrl: './resource.component.html',
+  styleUrls: ['./resource.component.scss']
 })
-export class ResourceWidgetComponent implements OnInit {
+export class ResourceComponent implements OnInit {
 
   @Input()
   resource: Resource;

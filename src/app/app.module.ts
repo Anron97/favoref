@@ -6,14 +6,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 
 import {AppComponent} from './app.component';
-import {ResourceWidgetComponent} from './components/resource-widget/resource-widget.component';
+import {ResourceComponent} from './components/resource/resource.component';
 import {HomeComponent} from './components/home-component/home.component';
+import {MatIconModule} from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResourceWidgetComponent,
+    ResourceComponent,
     HomeComponent,
   ],
   imports: [
@@ -21,6 +22,7 @@ import {HomeComponent} from './components/home-component/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatIconModule,
     MatButtonModule
   ],
   providers: [],
